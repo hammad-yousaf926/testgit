@@ -37,3 +37,70 @@ k = 1
                         """)
                         l = 0
                         while l <= 10:
+balance = 450000
+                            firstchoice2 = int(input("Please Enter your choice : "))
+                            if firstchoice2 == 1:
+                                print(f"Your balance is ${balance}")
+                            elif firstchoice2 == 2:
+                                m = 0
+                                while m <= 10:
+                                    amount = int(input("Enter your amount : "))
+                                    if amount <= balance:
+                                        print("Please wait. . . .")   
+                                        time.sleep(1)
+                                        remainbalance = balance - amount
+                                        print(f"Your remainig balance is ${remainbalance}")
+                                        time.sleep(1)
+                                        print("Please Collect your card.")
+                                        time.sleep(1)
+                                        print("Please collect your cash.")
+                                        sys.exit()
+                                    else:
+                                        print("Your amount cannot be more than your balance.")
+                                        print("Please Try Again.")
+                                        m = m + 1
+                            else:
+                                print("Invalid command. Please Try again.")
+                                l = l +1
+                    elif firstchoice1 == 2:
+                        print("""
+                        1. Check balance.
+                        2. Withdraw cash.
+                        """)
+                        l = 0
+                        while l <= 10:
+                            balance = 250000
+                            firstchoice2 = int(input("Please Enter your choice : "))
+                            if firstchoice2 == 1:
+                                print(f"Your balance is ${balance}")
+                            elif firstchoice2 == 2:
+                                m = 0
+                                while m <= 10:
+                                    amount = int(input("Enter your amount : "))
+                                    if amount <= balance:
+                                        print("Please wait. . . .")   
+                                        time.sleep(1)
+                                        remainbalance = balance - amount
+                                        print(f"Your remainig balance is ${remainbalance}")
+                                        time.sleep(1)
+                                        print("Please Collect your card.")
+                                        time.sleep(1)
+                                        print("Please collect your cash.")
+                                        sys.exit()
+                                    else:
+                                        print("Your amount cannot be more than your balance.")
+                                        print("Please Try Again.")
+                                        m = m + 1
+                            else:
+                                print("Invalid command. Please Try again.")
+                                l = l + 1
+                    else: 
+                        print("Invalid Command. Please Try again.")
+                        k = k + 1
+            else:
+                print("Your Pin Code is Incorrect.")
+                print("Please Try Again.") 
+                i = i + 1
+    else:
+        print("Kindly Enter a true card.")            
+        j = j + 1
