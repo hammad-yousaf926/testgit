@@ -1,0 +1,9 @@
+import time
+import sys
+j = 1
+while j <= 5:
+    is_atmcard = input("Have you inserted your atm card? ").lower()
+    if is_atmcard == "yes":
+        i = 1
+        while i <= 5:
+            pin_code = int(input("Enter Your Pin Code : "))
