@@ -7,3 +7,13 @@ while j <= 5:
         i = 1
         while i <= 5:
             pin_code = int(input("Enter Your Pin Code : "))
+if pin_code == 7827:
+                for row in range(7):
+                    for col in range(5):
+                        if col == 0 or col == 4 or (row==3 and (col > 0 and col < 4)):
+                            print("*",end="")
+                        else:
+                            print(end=" ")
+                    print()
+                numb = [4, 1, 1, 1, 1, 1, 4]
+                for numb2 in numb:
