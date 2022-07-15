@@ -27,3 +27,13 @@ if numb2 == 1:
                 1. Current Account.
                 2. Savings Account.
                 """)
+k = 1
+                while k <= 10:
+                    firstchoice1 = int(input("Please select a choice : "))
+                    if firstchoice1 == 1:
+                        print("""
+                        1. Check balance.
+                        2. Withdraw cash.
+                        """)
+                        l = 0
+                        while l <= 10:
