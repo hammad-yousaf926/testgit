@@ -17,3 +17,13 @@ if pin_code == 7827:
                     print()
                 numb = [4, 1, 1, 1, 1, 1, 4]
                 for numb2 in numb:
+if numb2 == 1:
+                        print("  *" * numb2)
+                    else: 
+                        print("*" * numb2 + "*")
+                print("Welcome back Hammad! to XYZ bank's ATM")
+                time.sleep(1)
+                print("""
+                1. Current Account.
+                2. Savings Account.
+                """)
